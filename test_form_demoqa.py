@@ -4,6 +4,7 @@ from selene.support.shared import browser
 from selene import be, have
 import random
 
+
 def test_form_demoqa(base_url):
     browser.element('#firstName').should(be.blank).type('Denis')
     browser.element('#lastName').should(be.blank).type('Denisov')
