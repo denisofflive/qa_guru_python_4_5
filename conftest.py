@@ -7,6 +7,6 @@ def window_size():
     browser.config.window_height = 768
 
 @pytest.fixture()
-def open_browser_for_form():
+def base_url():
     browser.open('https://demoqa.com/automation-practice-form')
     browser.config.driver.maximize_window()
