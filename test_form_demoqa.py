@@ -15,7 +15,6 @@ def test_form_demoqa(base_url):
     browser.element('.react-datepicker__month-select option[value="2"]').should(have.text('March')).click()
     browser.element('.react-datepicker__year-select option[value="1985"]').should(have.text('1985')).click()
     browser.element('.react-datepicker__day--015').should(have.text('15')).click()
-    time.sleep(3)
     browser.element('#subjectsInput').type('Maths').press_enter()
     browser.element(f"div[class*='custom-control'] label[for='hobbies-checkbox-{random.randint(1, 3)}']").click()
     browser.element('#uploadPicture').send_keys("E:/qa_guru_python_4_5/001.jpg")
