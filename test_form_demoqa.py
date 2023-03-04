@@ -1,8 +1,5 @@
-import time
-
 from selene.support.shared import browser
 from selene import be, have
-import random
 import os
 
 FIRSTNAME = 'Denis'
