@@ -1,3 +1,5 @@
+import time
+
 from selene.support.shared import browser
 from selene import be, have
 import os
@@ -47,4 +49,5 @@ def test_form_demoqa(browser_setup):
     browser.element('tr:nth-child(8) td:nth-child(2)').should(have.text(FILE))
     browser.element('tr:nth-child(9) td:nth-child(2)').should(have.text(ADDRESS))
     browser.element('tr:nth-child(10) td:nth-child(2)').should(have.text(f'{STATE} {CITY}'))
+    time.sleep(3)
     browser.element('#closeLargeModal').click()
